@@ -7,14 +7,14 @@ html {
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -35,13 +35,14 @@ a {
     text-transform: uppercase;
     padding: 12px;
     border: none;
+    cursor: pointer;
     background-color: #ea625c;
     color: #fff;
 }
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1040px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -60,6 +61,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 .site-logo {
     width: 35px;
     height: 42px;
@@ -112,6 +114,7 @@ a {
 .hero {
     border-bottom: 1px solid #dddddd;
 }
+
 .hero-container {
     display: flex;
     justify-content: space-between;
@@ -121,7 +124,6 @@ a {
 .hero-heading {
     font-weight: 700;
     font-size: 50px;
-    margin: 0;
     margin-bottom: 30px;
     line-height: 1.2;
 }
@@ -130,7 +132,6 @@ a {
     width: 490px;
     height: 120px;
     font-size: 16px;
-    margin: 0;
     margin-bottom: 30px;
     padding-left: 40px;
     border-left: 1px solid #888;
@@ -151,8 +152,8 @@ a {
 /* FEATURES SECTION */
 
 .features {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .features-list {
@@ -172,7 +173,6 @@ a {
 .features-item-title {
     font-size: 18px;
     font-weight: 700;
-    margin: 0;
     margin-bottom: 30px;
     line-height: 27px;
     text-transform: uppercase;
@@ -180,7 +180,7 @@ a {
 }
 
 .features-item-text {
-    margin: 0;
+    width: 280px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -190,11 +190,48 @@ a {
 /* FEATURES INFORMATION */
 .features-information {
     display: flex;
+    align-items: center;
 }
 
 .features-information-line {
-    align-items: start;
+    margin-right: 10px;
     width: 40px;
     height: 3px;
     background-color: #ea625c;
+}
+
+.features-information-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: #ea625c;
+}
+
+
+/* PROMO */
+.promo {
+    margin-bottom: 70px;
+    border: none;
+}
+
+.promo-blog {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+/* RUNNERS */
+.runners {
+    height: 830px;
+    background-image: url(../img/runners.jpg);
+    background-position: center center;
+}
+
+.runners-blog {
+    color: #fff;
+}
+
+.runners-text {
+    border-left: 1px solid #fff;
+    color: #fff;
 }
